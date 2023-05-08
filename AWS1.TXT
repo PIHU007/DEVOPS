@@ -1,0 +1,137 @@
+// AWS(amazon web service) //
+
+=> cloud computing => sharing of resources via internet(remotely)
+
+// characterestics of cloud //
+1 on demand self service
+2 Broad network access
+3 scalability => up/down
+4 resouce pooling
+5 measured service
+
+// CLOUD MARKET //
+MICROSOFT AZURE
+GOOGLE CLOUD
+AWS CLOUD
+VM,ORACLE,ALIBABA ETC
+
+// certificates //
+aws solution architect => beg
+aws Devops
+aws sysops 
+
+IAAS => only hardware like network , storage , server ,virtualization , os 
+PAAS => IASS + runtime,middleware
+SAAS => IASS+PAAS+application,data
+
+Public cloud 
+Private
+Hybrid => both public and private
+
+// there two type storage instance //
+EC2(elastic compute cloud) instance => scalable computing machine
+instance == vm
+EC2 = AWS
+VM  = Microsoft
+EBS(elastic block stroage) => external storage(NAS)
+instance storage => internal storage(DAS)
+   non-persistent (RAM,CACHED data DELETE)
+  paid because direct attach server aws
+20 instance create in region per A/C
+ex=  mumbai => 20
+     USA => 20
+
+// type of instance/vm //
+general purpose instance =>  Balanced memeory and ram
+compute optimized => more cpu than ram
+memoery   "       => more ram
+accelerated/gpu    => gameing best
+storage  "      => low latency 
+high memeory " => high ram ,nitro system
+
+// general purpose instance //
+   Balanced memeory ,ram , networking and variety of workload
+   #A series
+     A1 => medicum+large
+     paid
+   #M series 
+     only large 
+     paid
+     EBS
+     m4,m5,m5a,m5ad,m5d etc
+   #T series 
+     t2,t3,t3a
+     micro
+     free
+
+// instance purchasing policy //
+read online policy
+1 on demand 
+2 dedicated instance
+3 dedicated host
+4 spot instance
+5 schedule instance
+6 reserved instance
+
+// instance access //
+=> key and key pair name
+   public key = AWS
+   private key => user download only ones
+   RDP OR SSH(without key pair not access)
+   
+
+// root volume //
+EBS VS INSTANCE
+EBS store
+instance store
+AMIs backed by EC2 instance store and AMIs backed by EBS.
+AWS recommends use of EBS backed AMIs, because they launch faster and use persistent storage.
+Data on an instance store volume persists only during the life of the associated instance 
+if an instance is stopped or terminated, any data on instance store volumes is lost.
+
+
+// ip alloacte //
+instance release then public(dynamic) ip release
+instances retain private ip4/ip6
+elastic ip => static ip with paid ex = used by website 
+when instance is release then elastic ip not release
+
+// instance metadata //
+non encrypted
+group,ip4,ami-id,local-hostname etc
+http://169.254.169.254/latest/metadata
+
+// VPC VIRTUAL PRIVATE CLOUD //
+
+// storage aws //
+#simple storage service(s3)
+ object level storage 
+ ex = movice , pdf etc
+#elastic file system(EFS)
+ center storage 
+ linux based system
+#EBS(elastic block storage) 
+  instance kay sath hoti hai
+ #galicer/s3 galicer 
+  long term stoarge  hoti hai
+  ex = old song  
+#showball
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

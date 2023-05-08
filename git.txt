@@ -1,0 +1,120 @@
+// git //
+2005 linus torvald 
+primary working linux 
+version system control
+source code management
+ex = some code => version1
+     some code => version2
+     
+github/gitlab => service(code upload server)
+github => microsoft(not open source)/gitlab -> yes
+
+centralised  version control system
+workspace/dir <update/commit> remote server
+
+distributed version control system
+workspace/dir  <update/commit> local repo <push/pull> remote server 
+
+git init
+============================================================================================================
+ working dir <add> staging area(all code your choice which code is commit) <commit> local repo(Branch, master,user,etc)  
+=============================================================================================================
+
+
+// CMD //
+commit(save/snapshot)
+commit/version id => 40 alpha-numeric+sha 1 hash
+tag(commit id) => message ex first-commit
+
+git --global user.name pihu
+git --global user.email pihu@gmail.com
+git config --list => show user name/email
+git init => dir1 convert to local repo
+git add file.txt => dir1(file.txt) add to staging area
+git add --all => multiple file add to staging area
+git status 
+git -m "first commit" then show git status => clean
+git log => user name/email ,commit_id, tag, date/time
+git show <commit-id> => show code
+git log --oneline => show commit-id in oneline
+git log --oneline -3 => 3 commit-id show
+get remote add origin <url-github> => add code in remote server github
+git push -u origin master  => master(github) by default
+then username and password
+git pull origin master
+git push origin -d github  => delete remote branch
+git remote rename origin user  => reaname origin=>user
+
+
+git status --short => show
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
+git commit -a -m "Updated index.html with a new line" => -a(automatically stage every changed, already tracked file) 
+touch .gitignore => ignore (ex =*.css *.js)
+
+
+// Branch //
+=> suppose that create a branch like git_branch.already branch exist code copy in your branch(git_branch).
+=> suppose that create a branch like git_branch. this inside git_branch created text file. 
+   this file show all the branch. then commit only show your branch.
+
+Master Branch => by default Branch by initilaise git
+one branch <merge> other branch
+git branch => show all branch 
+git branch git_branch => created branch 
+git checkout git_branch => switch branch
+-d => delete branch -D => running branch delete
+git remote -v => show origin+url github
+git reset <file> => remove staging area
+git reset --hard => remove workingsace and staging area
+git branch -a => show local and github branch 
+git branch -r => github branch
+
+
+// merge //
+git merge git2_branch
+
+some time conflict occur in merge
+
+// stash //
+workingspace only one are not more. ex = can only do one thing at a time
+Temporarily saves changes that are not ready to be committed, allowing you to switch branches without losing your work.
+ 
+git stash => temporarily save 
+git stash list => show list format {0} {1} ... 
+git stash apply state@{0} => add to workingspace
+git stash clear => stash clean
+
+
+
+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 =>token classic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

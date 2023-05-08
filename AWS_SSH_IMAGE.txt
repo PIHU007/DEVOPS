@@ -1,0 +1,1 @@
+ssh -i "RISHI_SERVER.pem" ubuntu@ec2-52-90-221-169.compute-1.amazonaws.com

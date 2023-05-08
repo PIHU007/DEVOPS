@@ -1,0 +1,136 @@
+docker images -> all image present in local machine
+docker serach particular_images ex=win10 or docker hub(website)
+
+docker run -it container_name /bin/bash => by default name container create
+run ->(create+start+attach) ->image file create docker engine
+i->interactive mode
+t->ternimals
+--name rishi -> container_name userdefine otherwise by default name
+
+docker service status -> strat or not
+docker create container_name 
+docker start particular_container_name_start 
+docker attach container_name -> inside container
+docker stop container_name/id
+
+docker ps -a -> see all container/only running status container
+ps->process status
+-a ->all
+-q ->id of container
+-l ->latest container show
+
+docker rm container_name   -> remove/delete
+-v -> volume
+-f -> forcefully
+
+which docker -> path
+docker -v -> version
+docker info 
+exit
+cat etc/os-release
+
+// imp cmd docker //
+docker stop $(docker ps -a -q) => all running container delete
+docker rm $(docker ps -a -q) => delete all stop container
+docker rmi -f $(docker images -q) => delete all images
+
+// craete docker file //
+Docker file => dependency hoti hai
+Docker 
+docker bulid -t any_name .
+-t => tag_name
+From => base image ex = centos,win7
+Run  => execute command
+Maintainer => author/description
+Copy => local machine copy(no internet copy)
+Add  => internet download and extract(unzip)
+Expose => port ex = 8080 enable
+Workdir => work dir set
+Entrypoint => priority
+Env => environment
+
+
+docker diff container_name 
+c =change d =delete a =apppend
+docker commit container_name new_conatiner_name
+
+// Docker hub //
+private/public image upload
+docker tag image_name project_name
+docker push project_name => local machine to docker hub
+docker pull project_name => docker hub to local machine
+docker login => username/password
+
+// docker port expose //
+docker run -td --name conatiner1 -p 80:80 centos
+-p => port(user internet communicate container ) -p automaticaly used -expose 
+-expose => (container communicate internal not internet)
+-d => not ternimal
+docker ps 
+docker port conatiner1
+docker exe -it conatiner1 /bin/bash
+exe vs attach
+exe => create new process container
+attach => create existing process container
+
+// docker volume //
+  share floder/Dir which access by cont1,cont2,etc 
+  container to container
+  host to container
+  volume create while create conatiner
+  volume create container only one
+  container is delete but volume not delete
+  
+ 
+
+// Docker registry //
+  
+
+
+
+
+
+// Theroy  Docker //
+containerized code(particular container code ex hyevfga8936)
+container => just like VM1,VM2,etc
+Docker/Docker engine  => is a tool create vm
+Hardware => os => docker => container1 , container2 etc
+Docker hub  => images ex = win7 ,centos etc 
+Os level virtualisation work docker
+Go Lang used
+Linux kernel used docker
+Paas used docker 
+
+Ques=Container kay pass os Hota Hai ya nahi
+Answer = yes 5% os file hoti hai baki host os say uthalatha  hai
+
+  container stop/pause is known as image
+  Image running is known container 
+  Image send one place to other place
+  Docker cross platform are not support 
+  Ex =   Linux(container) to window(container) not support 
+         Linux to Linux  yes support 
+         Linux to centos not support 
+Docker engine inside image store because fast container create and reused 
+Container is layerd file system
+
+one image create multiple container
+ex = centos  =>  container1(id = jfigvihgijrisgvj)
+     centos  =>  container2(id  = jvhskdvhsghirin)
+docker images 
+o/p = centos 
+     
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
