@@ -1,0 +1,23 @@
+// CI/CD //
+CI => continous integation
+CD => continous development/deployment
+CI =>  is not a tool.but is methdology
+CI => continous Build+continous testing or all level testing
+ex = CAR => WHEEL,BODY,etc
+
+// old style //
+developer => push github code ==> some code(github) ==> 
+other person pull code some testing(this code error occur any line no.then developer contact to fixed error.developer not current working for this code but another code working.so developer fixed previous code problem occur.beacuse developer not this code current working
+
+
+
+// CI //
+version control system <developer code push(unit-code(chuck) maean not full code push in github) gihtub ><automatically pull> BUILD , test ,deploy  <msg> email,sms etc
+
+// jenkins //
+jenkins framework
+jenkins is java bulid(java install system)
+open source
+lot of community supported and plugin
+sun microsoft developed 2004 jenkins(free)+hudson(paid)
+
